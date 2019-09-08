@@ -1,4 +1,4 @@
-package 进程_协程_管道
+package main
 
 import "fmt"
 
