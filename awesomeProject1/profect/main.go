@@ -6,7 +6,7 @@ import (
 )
 
 var userid string
-var userPwd int
+var userPwd string
 
 func main(){
 	//接受用户的选择
@@ -44,7 +44,7 @@ func main(){
 		fmt.Println("Your Password")
 		fmt.Scanf("%d\n",&userPwd)
 
-		err := login(userid,userPwd)
+		err := alogin(userid,userPwd)
 		if err != nil{
 			fmt.Println("login fail")
 		}else {
