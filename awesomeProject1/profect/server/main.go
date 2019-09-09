@@ -9,6 +9,7 @@ import (
 )
 
 func readpkg(conn net.Conn) (mes message.Message, err error)  {
+	//将从客户端接受到是已经序列化好的数据
 	//读取client 数据
 	buf := make([]byte,8096)
 	_, err = conn.Read(buf[:4])
@@ -16,16 +17,18 @@ func readpkg(conn net.Conn) (mes message.Message, err error)  {
 		fmt.Println("conn Read err = ",err )
 		return
 	}
-	//根据buf[:4]转成一个uint32类型
-	var pkglen uint32
+	//根据buf[:4](是从客户端接收到的数据)转成一个uint32类型
+	var pkglen uint32  //包的长度
 	pkglen = binary.BigEndian.Uint32(buf[0:4])
-	//根据pkglen 读取消息内容
+	//此时pkglen还是个链接中的uint32类型
+	//根据pkglen 读取消息长度  判断是否掉包
 	n1 , err := conn.Read(buf[:pkglen])
 	if n1 != int(pkglen) || err != nil{
 		fmt.Println("conn Read(pkglen) err = ",err )
 		return
 	}
-	//将pgklen反序列化  ->message.Message
+	//读取消息
+	//将连接中的pgklen反序列化  ->message.Message
 	err = json.Unmarshal(buf[:pkglen],&mes)
 	if err != nil{
 		fmt.Println("json.Unmarshal err =" ,err)
@@ -40,9 +43,15 @@ func process(conn net.Conn){
 	//循环的客户端发送的信息
 	for{
 		//这里读取数据包，直接封装成一个readpkg()
-		fmt.Println("读到的buf = ",buf[:4])
+		mes , err := readpkg(conn)
+		if err != nil{
+			fmt.Println("readpkg err = ",err)
+		}
+		fmt.Println("mes = ",mes)
 	}
 }
+
+
 
 func main()  {
 	fmt.Println("sever listen....")
