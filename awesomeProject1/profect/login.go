@@ -2,14 +2,17 @@ package main
 
 import (
 	"awesomeProject1/profect/common/message"
+	"awesomeProject1/profect/method"
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
 	"net"
+	"time"
 )
 //完成登录校验
 func alogin(userID string , userPwd string) (err error){
 	//链接到服务器端
+	fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)
 	conn , err := net.Dial("tcp","localhost:8898")
 	if err != nil{
 		fmt.Println("net Dial err = ",err)
@@ -55,11 +58,18 @@ func alogin(userID string , userPwd string) (err error){
 	}
 	//fmt.Println("客户端 发送的消息长度 = %d\n",len(data))
 	//发送消息本身
-	n , err = conn.Write(data)
+	_, err = conn.Write(data)
 	if err != nil{
 		fmt.Println("conn write fail ", err)
 		return
 	}
+	time.Sleep(20 * time.Second)
+	fmt.Println("休眠20s")
 	//处理服务器返回信息
+	mes , err = method.Readpkg(conn)
+	if err !=nil{
+		fmt.Println("Readpkg err = ", err)
+	}
+
 	return
 }

@@ -42,8 +42,8 @@ func main(){
 		fmt.Println("Your ID")
 		fmt.Scanf("%s\n",&userid)
 		fmt.Println("Your Password")
-		fmt.Scanf("%d\n",&userPwd)
-
+		fmt.Scanf("%s\n",&userPwd)
+		fmt.Println("1231313")
 		err := alogin(userid,userPwd)
 		if err != nil{
 			fmt.Println("login fail")
