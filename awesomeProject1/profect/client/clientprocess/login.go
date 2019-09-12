@@ -1,4 +1,4 @@
-package main
+package clientprocess
 
 import (
 	"awesomeProject1/profect/common/message"
@@ -7,12 +7,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"net"
-	"time"
 )
 //完成登录校验
-func alogin(userID string , userPwd string) (err error){
+func Alogin(userID string , userPwd string) (err error){
 	//链接到服务器端
-	fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)
+	//fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)
 	conn , err := net.Dial("tcp","localhost:8898")
 	if err != nil{
 		fmt.Println("net Dial err = ",err)
@@ -63,13 +62,25 @@ func alogin(userID string , userPwd string) (err error){
 		fmt.Println("conn write fail ", err)
 		return
 	}
-	time.Sleep(20 * time.Second)
-	fmt.Println("休眠20s")
+	//time.Sleep(20 * time.Second)
+	//fmt.Println("休眠20s")
+
+
 	//处理服务器返回信息
-	mes , err = method.Readpkg(conn)
+	tf := &method.Transfer{
+		Conn:conn,
+	}
+	mes , err = tf.Readpkg()
 	if err !=nil{
 		fmt.Println("Readpkg err = ", err)
 	}
-
+	//将mes的Data部分反序列化 成LoginResMes
+	var loginResMes message.LoginResMes
+	err = json.Unmarshal([]byte(mes.Date),&loginResMes)
+	if loginResMes.Code == 200{
+		fmt.Println("login success")
+	}else if loginResMes.Code == 500 {
+		fmt.Println(loginResMes.Error)
+	}
 	return
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"awesomeProject1/profect/client/clientprocess"
 	"fmt"
 	"os"
 )
@@ -44,12 +45,8 @@ func main(){
 		fmt.Println("Your Password")
 		fmt.Scanf("%s\n",&userPwd)
 		fmt.Println("1231313")
-		err := alogin(userid,userPwd)
-		if err != nil{
-			fmt.Println("login fail")
-		}else {
-			fmt.Println("login sucees")
-		}
+		clientprocess.Alogin(userid,userPwd)
+
 	}else {
 
 	}
