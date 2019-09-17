@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject1/profect/server/model"
+	"sever-client/profect/server/model"
 	"fmt"
 	"net"
 	"time"

@@ -1,7 +1,7 @@
 package method
 
 import (
-	"awesomeProject1/profect/common/message"
+	"sever-client/profect/common/message"
 	"encoding/binary"
 	"encoding/json"
 	"fmt"

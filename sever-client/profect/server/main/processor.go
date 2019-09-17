@@ -1,9 +1,9 @@
 package main
 
 import (
-	"awesomeProject1/profect/common/message"
-	"awesomeProject1/profect/method"
-	"awesomeProject1/profect/server/process1"
+	"sever-client/profect/common/message"
+	"sever-client/profect/method"
+	"sever-client/profect/server/process1"
 	"fmt"
 	"io"
 	"net"

@@ -1,9 +1,9 @@
 package process1
 
 import (
-	"awesomeProject1/profect/common/message"
-	"awesomeProject1/profect/method"
-	"awesomeProject1/profect/server/model"
+	"sever-client/profect/common/message"
+	"sever-client/profect/method"
+	"sever-client/profect/server/model"
 	"encoding/json"
 	"fmt"
 	"net"

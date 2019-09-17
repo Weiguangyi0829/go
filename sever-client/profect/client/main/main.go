@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject1/profect/client/process"
+	"sever-client/profect/client/process"
 	"fmt"
 	"os"
 )

@@ -1,8 +1,8 @@
 package process
 
 import (
-	"awesomeProject1/profect/common/message"
-	"awesomeProject1/profect/method"
+	"sever-client/profect/common/message"
+	"sever-client/profect/method"
 	"encoding/binary"
 	"encoding/json"
 	"fmt"

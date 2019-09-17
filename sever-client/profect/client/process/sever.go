@@ -1,6 +1,6 @@
 package process
 import (
-	"awesomeProject1/profect/method"
+	"sever-client/profect/method"
 	"fmt"
 	"net"
 	"os"
