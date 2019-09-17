@@ -23,6 +23,8 @@ func process(conn net.Conn){
 
 
 func main()  {
+	//when the server starts , initialize redis connection pool
+	initPool()
 	fmt.Println("sever listen123123123123123....")
 	listrn , err := net.Listen("tcp","0.0.0.0:8898")
 	defer listrn.Close()

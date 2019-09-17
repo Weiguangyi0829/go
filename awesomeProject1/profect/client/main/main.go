@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject1/profect/client/clientprocess"
+	"awesomeProject1/profect/client/process"
 	"fmt"
 	"os"
 )
@@ -13,9 +13,9 @@ func main(){
 	//接受用户的选择
 	var key int
 	//判断是否还继续显示菜单
-	var loop = true
 
-	for loop {
+
+	for true {
 		fmt.Println("------------欢迎登陆----------------------")
 		fmt.Println("\t\t 1、登录")
 		fmt.Println("\t\t 2、注册")
@@ -25,29 +25,20 @@ func main(){
 		switch key {
 			case 1:
 				fmt.Println("login")
-				loop = false
+				//login
+				fmt.Println("Your ID")
+				fmt.Scanf("%s\n",&userid)
+				fmt.Println("Your Password")
+				fmt.Scanf("%s\n",&userPwd)
+				fmt.Println("1231313")
+				process.Alogin(userid,userPwd)
 			case 2:
 				fmt.Println("create new account")
-				loop = false
 			case 3:
 				fmt.Println("exit")
 				os.Exit(0)
 			default:
 				fmt.Println("please input again")
 		}
-	}
-
-	//根据用户输入 显示新的提示
-	if key == 1{
-		//login
-		fmt.Println("Your ID")
-		fmt.Scanf("%s\n",&userid)
-		fmt.Println("Your Password")
-		fmt.Scanf("%s\n",&userPwd)
-		fmt.Println("1231313")
-		clientprocess.Alogin(userid,userPwd)
-
-	}else {
-
 	}
 }

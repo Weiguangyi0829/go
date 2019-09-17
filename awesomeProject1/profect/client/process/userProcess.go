@@ -1,4 +1,4 @@
-package clientprocess
+package process
 
 import (
 	"awesomeProject1/profect/common/message"
@@ -62,9 +62,6 @@ func Alogin(userID string , userPwd string) (err error){
 		fmt.Println("conn write fail ", err)
 		return
 	}
-	//time.Sleep(20 * time.Second)
-	//fmt.Println("休眠20s")
-
 
 	//处理服务器返回信息
 	tf := &method.Transfer{
@@ -78,7 +75,11 @@ func Alogin(userID string , userPwd string) (err error){
 	var loginResMes message.LoginResMes
 	err = json.Unmarshal([]byte(mes.Date),&loginResMes)
 	if loginResMes.Code == 200{
-		fmt.Println("login success")
+		//fmt.Println("login success")
+        go severProcessResMes(conn)
+		for {
+			ShowMenu()
+		}
 	}else if loginResMes.Code == 500 {
 		fmt.Println(loginResMes.Error)
 	}
