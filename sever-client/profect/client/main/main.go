@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-var userid string
+var userid int
 var userPwd string
 var userName string
 
@@ -28,7 +28,7 @@ func main(){
 				fmt.Println("login")
 				//login
 				fmt.Println("Your ID")
-				fmt.Scanf("%s\n",&userid)
+				fmt.Scanf("%d\n",&userid)
 				fmt.Println("Your Password")
 				fmt.Scanf("%s\n",&userPwd)
 				up := &process.UserProcess{}
@@ -36,7 +36,7 @@ func main(){
 			case 2:
 				fmt.Println("create new account")
 				fmt.Println("Your ID")
-				fmt.Scanf("%s\n",&userid)
+				fmt.Scanf("%d\n",&userid)
 				fmt.Println("Your Password")
 				fmt.Scanf("%s\n",&userPwd)
 				fmt.Println("Your name")

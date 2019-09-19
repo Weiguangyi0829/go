@@ -30,6 +30,7 @@ func (this *Transfer)Readpkg() (mes message.Message, err error)  {
 	pkglen = binary.BigEndian.Uint32(this.Buf[0:4])
 	//此时pkglen还是个链接中的uint32类型
 	//根据pkglen 读取消息长度  判断是否掉包
+	fmt.Printf("receive len:%d", pkglen)
 	n , err := this.Conn.Read(this.Buf[:pkglen])
 	if n != int(pkglen) || err != nil{
 		//err = errors.New("read pgk header err")
@@ -37,6 +38,7 @@ func (this *Transfer)Readpkg() (mes message.Message, err error)  {
 	}
 	//读取消息
 	//将连接中的pgklen反序列化  ->message.Message
+	fmt.Printf("receive data:%s\n", string(this.Buf[0:pkglen]))
 	err = json.Unmarshal(this.Buf[:pkglen],&mes)
 	if err != nil{
 		fmt.Println("json.Unmarshal err =" ,err)

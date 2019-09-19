@@ -1,9 +1,9 @@
 package main
 
 import (
-	"sever-client/profect/server/model"
 	"fmt"
 	"net"
+	"sever-client/profect/server/model"
 	"time"
 )
 
@@ -22,13 +22,6 @@ func process(conn net.Conn){
 	}
 }
 
-func init()  {
-	//when the server starts , initialize redis connection pool
-	initPool("localhost:6379",16,0,300*time.Second)
-	initUserCurd()
-}
-
-
 //完成对UserCurd初始化
 func initUserCurd() {
 	//这里的pool 本身就是一个全局的变量  redis.go
@@ -37,7 +30,8 @@ func initUserCurd() {
 }
 
 func main()  {
-	//
+	initPool("localhost:6379", 16, 1024, time.Second*300)
+	initUserCurd()
 	fmt.Println("sever listen123123123123123....")
 	listrn , err := net.Listen("tcp","0.0.0.0:8898")
 	defer listrn.Close()

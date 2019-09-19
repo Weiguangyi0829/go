@@ -16,7 +16,7 @@ type Message struct {
 
 //定义2个消息 即Date
 type LoginMes struct {
-	UserID string `json:"user_id"`
+	UserID int `json:"user_id"`
 	UserPwd string `json:"user_pwd"`
 	Username string `json:"username"`
 }

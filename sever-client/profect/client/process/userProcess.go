@@ -1,13 +1,13 @@
 package process
 
 import (
-	"sever-client/profect/common/message"
-	"sever-client/profect/method"
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
 	"net"
 	"os"
+	"sever-client/profect/common/message"
+	"sever-client/profect/method"
 )
 
 type UserProcess struct {
@@ -15,7 +15,7 @@ type UserProcess struct {
 }
 
 //完成登录校验
-func (this *UserProcess) Alogin(userID string , userPwd string) (err error){
+func (this *UserProcess) Alogin(userID int , userPwd string) (err error){
 	//链接到服务器端
 	//fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)
 	conn , err := net.Dial("tcp","localhost:8898")
@@ -51,15 +51,27 @@ func (this *UserProcess) Alogin(userID string , userPwd string) (err error){
 		return
 	}
 
+	var buf [4]byte
+	//这个是消息的长度
+	packLen := uint32(len(data))
+	binary.BigEndian.PutUint32(buf[0:4], packLen)
+
+	//先发送消息的长度,便于服务器接收
+	n, err := conn.Write(buf[:])
+	if err != nil || n != 4 {
+		fmt.Println("write data  failed")
+		return
+	}
+	//发送消息给服务器
+	_, err = conn.Write([]byte(data))
+	if err != nil {
+		return
+	}
+
 	//处理服务器返回信息
 	tf := &method.Transfer{
 		Conn:conn,
 	}
-	err = tf.Writepkg(data)
-	if err != nil{
-		fmt.Println("Writepkg err = ", err)
-	}
-
 	mes , err = tf.Readpkg()
 	if err !=nil{
 		fmt.Println("Readpkg err = ", err)
@@ -79,7 +91,7 @@ func (this *UserProcess) Alogin(userID string , userPwd string) (err error){
 	return
 }
 
-func (this *UserProcess) Register(userID string , userPwd string ,userName string) (err error)  {
+func (this *UserProcess) Register(userID int , userPwd string ,userName string) (err error)  {
 	//链接到服务器端
 	//fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)
 	conn , err := net.Dial("tcp","localhost:8898")
@@ -96,9 +108,9 @@ func (this *UserProcess) Register(userID string , userPwd string ,userName strin
 
 	//3、创建一个LoginMes 结构体  即消息主体的Date
 	var registerMes message.RegisterMes
-	registerMes.User.UserId = userID
-	registerMes.User.UserPwd = userPwd
-	registerMes.User.UserName = userName
+	registerMes.User.Id = userID
+	registerMes.User.Pwd = userPwd
+	registerMes.User.Name = userName
 
 	//将loignMes序列化  即消息主体的Date
 	data , err := json.Marshal(registerMes)
@@ -115,47 +127,41 @@ func (this *UserProcess) Register(userID string , userPwd string ,userName strin
 		fmt.Println("json Marshal err =",err)
 		return
 	}
-
-	//先获取到data长度 ->转成一个表示长度的byte切片(字节类型的切片)
-	var pkglen uint32
-	pkglen = uint32(len(data))
 	var buf [4]byte
-	binary.BigEndian.PutUint32(buf[0:4],pkglen)
-	//发送消息长度
-	n ,err := conn.Write(buf[0:4])
-	if n != 4 || err != nil{
-		fmt.Println("conn write fail ", err)
-		return
-	}
-	//fmt.Println("客户端 发送的消息长度 = %d\n",len(data))
-	//发送消息本身
-	_, err = conn.Write(data)
-	if err != nil{
-		fmt.Println("conn write fail ", err)
-		return
-	}
+	//这个是消息的长度
+	packLen := uint32(len(data))
+	binary.BigEndian.PutUint32(buf[0:4], packLen)
 
+	//先发送消息的长度,便于服务器接收
+	n, err := conn.Write(buf[:])
+	if err != nil || n != 4 {
+		fmt.Println("write data  failed")
+		return
+	}
+	//发送消息给服务器
+	_, err = conn.Write([]byte(data))
+	if err != nil {
+		return
+	}
 	//处理服务器返回信息
 	tf := &method.Transfer{
 		Conn:conn,
 	}
-	err = tf.Writepkg(data)
-	if err != nil{
-		fmt.Println("Writepkg err = ", err)
-	}
+
 	mes , err = tf.Readpkg() // mes 就是 RegisterResMes
 	if err !=nil{
 		fmt.Println("Readpkg err = ", err)
 	}
 	//将mes的Data部分反序列化 成LoginResMes
-	var RegisterResMes message.LoginResMes
+	var RegisterResMes message.RegisterResMes
 	err = json.Unmarshal([]byte(mes.Date),&RegisterResMes)
 	if RegisterResMes.Code == 200{
 		//fmt.Println("login success")
-		fmt.Println("ss")
+		fmt.Println("Register is success")
 		os.Exit(0)
-	}else {
-		fmt.Println(RegisterResMes.Error)
+	}
+	if RegisterResMes.Code == 100 {
+		fmt.Println("用户id已经存在，请重新注册...")
 		os.Exit(0)
 	}
 	return

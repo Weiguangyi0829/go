@@ -1,12 +1,12 @@
 package main
 
 import (
-	"sever-client/profect/common/message"
-	"sever-client/profect/method"
-	"sever-client/profect/server/process1"
 	"fmt"
 	"io"
 	"net"
+	"sever-client/profect/common/message"
+	"sever-client/profect/method"
+	"sever-client/profect/server/process1"
 )
 
 type Process2 struct {
@@ -17,13 +17,17 @@ type Process2 struct {
 func (this *Process2)ServerProcessMes(mes *message.Message) (err error){
 	switch mes.Type {
 	    case message.LoginMesType:
-			//处理登录登录
+			//处理登录
 			up := &process1.UserloginProcess{
 				Conn:this.Conn,
 			}
-			up.ServerProcessLogin(mes)
+			err = up.ServerProcessLogin(mes)
 		case message.RegisterMesType:
 			//处理注册
+			up := &process1.UserloginProcess{
+				Conn:this.Conn,
+			}
+			err = up.ServerProcessRegister(mes)
 	default:
 		fmt.Println("")
 	}

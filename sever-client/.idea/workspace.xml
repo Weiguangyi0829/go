@@ -2,25 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f360610-336a-4687-a8e4-ff53f7049262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../awesomeProject1/profect/common/message/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profect/server/process1/userMgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/routers/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/client/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/client/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/client/process/userProcess.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/common/message/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/common/message/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/server/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/server/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/server/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/server/model/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/server/model/userCurd.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/server/model/userCurd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/profect/server/process1/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/profect/server/process1/userProcess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/client/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userProcess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/common/message/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/common/message/message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/common/message/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/common/message/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/method/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/method/S1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/main/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/model/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/model/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/model/userCurd.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/userCurd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/process1/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/process1/userProcess.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
@@ -29,9 +43,21 @@
   <component name="ProjectId" id="1QxLbZaFwJIkzrxl6gnFiNBUo4m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go_code" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\36527\go\src\sever-client\profect\server\model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,6 +71,30 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="sever-client" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/profect/client/main/main.go" />
+      <package value="sever-client" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build sever-client/profect/server/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="sever-client" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <package value="sever-client/profect/server/main" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build sever-client/profect/server/main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -53,7 +103,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
