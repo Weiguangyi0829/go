@@ -13,8 +13,8 @@ type UserloginProcess struct {
 	Conn net.Conn
 	//表示conn是哪个用户的
 	UserId int
+	//UserName string
 }
-
 
 //serverProcessLogin函数，专门处理登录请求
 func (this *UserloginProcess)ServerProcessLogin(mes *message.Message) (err error){
@@ -46,6 +46,20 @@ func (this *UserloginProcess)ServerProcessLogin(mes *message.Message) (err error
 		}
 	}else {
 		loginResMes.Code = 200
+		//这里用户登录成功，将登录成功放入userMgr中
+		//将登录成功的userid赋给this
+		this.UserId = loginMes.UserID
+		//this.UserName = loginMes.Username//11111111111111111111111111111111
+		userMgr.AddonlineUsers(this)
+		this.ServerProcessNotifyUserStatus(this.UserId)
+		//将当前在线用户id 放到loginMes.userid[]
+		for id , _ := range userMgr.onlineUsers{
+			loginResMes.UserIds = append(loginResMes.UserIds,id)
+		}
+		////将当前在线用户name 放到 loginMes.username[]
+		//for name , _ := range userMgr.onlineUserName{
+		//	loginResMes.UserName = append(loginResMes.UserName,name)
+		//}
 		fmt.Println("user = ",user,"suceess")
 	}
 	//将loginResMes 序列化 添加到消息主体
@@ -70,6 +84,7 @@ func (this *UserloginProcess)ServerProcessLogin(mes *message.Message) (err error
 	return
 }
 
+//专门处理注册请求
 func (this *UserloginProcess)ServerProcessRegister(mes *message.Message) (err error){
 	//先从mes 取出mes.Data  并直接反序列化成RegisterMes
 	var RegisterMes message.RegisterMes
@@ -119,4 +134,52 @@ func (this *UserloginProcess)ServerProcessRegister(mes *message.Message) (err er
 		return
 	}
 	return
+}
+
+//专门通知所有在线用户的请求
+//userId 通知其他人上线了
+func (this *UserloginProcess)  ServerProcessNotifyUserStatus(userId int) {
+	//遍历 onlineUsers  一个一个的发送NotifyUserStatusMes 通知他们 userId这个用户上线了
+	for id , u := range userMgr.onlineUsers{
+		//过滤自己
+		if id == userId {
+			continue
+		}
+		//开始通知
+		u.ServerProcessNotifyUseronline(userId)
+	}
+}
+
+//开始通知
+func (this *UserloginProcess) ServerProcessNotifyUseronline(userId int) {
+	//开始定义消息
+	var mes message.Message
+	mes.Type = message.NotifyUserStatusMesType
+
+	var notifyUserStatusMes  message.NotifyUserStatusMes
+	notifyUserStatusMes.UserId = userId
+	notifyUserStatusMes.Satus = message.UserOnline
+	//将 notifyUserStatusMes 序列化
+	data , err := json.Marshal(notifyUserStatusMes)
+	if err != nil{
+		fmt.Println("开始通知1-json.Marshal err =",err)
+		return
+	}
+	mes.Date = string(data)
+	//对 mes 再次序列化
+	data , err = json.Marshal(mes)
+	if err != nil{
+		fmt.Println("开始通知2-json.Marshal err =",err)
+		return
+	}
+	//准备发送
+	tf := &method.Transfer{
+		Conn: this.Conn,
+	}
+	err = tf.Writepkg(data) //发送到哪去???
+	if err != nil{
+		fmt.Println("开始通知3-Writepkg err =",err)
+		return
+	}
+
 }

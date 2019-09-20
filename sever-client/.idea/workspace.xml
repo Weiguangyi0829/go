@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f360610-336a-4687-a8e4-ff53f7049262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profect/server/process1/userMgr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profect/client/model/UserClientSM.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profect/client/process/userMgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject/Spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/client/process/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/sever.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userProcess.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profect/common/message/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/common/message/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profect/common/message/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/common/message/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/method/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/method/S1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/main/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/processor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/model/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/error.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/model/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/model/userCurd.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/userCurd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profect/server/process1/userMgr.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/process1/userMgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profect/server/process1/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/process1/userProcess.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +67,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build sever-client/profect/server/main">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="sever-client" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
@@ -91,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build sever-client/profect/server/main" />
       </list>
     </recent_temporary>

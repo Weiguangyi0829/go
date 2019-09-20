@@ -81,6 +81,21 @@ func (this *UserProcess) Alogin(userID int , userPwd string) (err error){
 	err = json.Unmarshal([]byte(mes.Date),&loginResMes)
 	if loginResMes.Code == 200{
 		//fmt.Println("login success")
+		//可以显示当前在线用户列表，遍历
+		//fmt.Println("当前在线用户列表")
+		for _,v := range loginResMes.UserIds{
+			if v == userID {
+				continue
+			}
+			fmt.Println("用户id:\t",v)
+			//完成 客户端的 	onlineUsers 完成初始化
+			user := &message.User{
+				Id:     v,
+				Status: message.UserOnline,
+			}
+			onlineUsers[v] = user
+		}
+		fmt.Println("\n\n")
         go severProcessResMes(conn)
 		for {
 			ShowMenu()

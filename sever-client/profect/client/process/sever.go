@@ -1,5 +1,7 @@
 package process
 import (
+	"encoding/json"
+	"sever-client/profect/common/message"
 	"sever-client/profect/method"
 	"fmt"
 	"net"
@@ -16,7 +18,8 @@ func ShowMenu()  {
 	fmt.Scanf("%d\n",&key)
 	switch key {
 		case 1:
-			fmt.Println("---------1、Display a list of online users---------------------")
+			fmt.Println("当前在线用户")
+			outputonlineUser()
 		case 2:
 			fmt.Println("---------2、Send the message---------------------")
 		case 3:
@@ -40,6 +43,16 @@ func severProcessResMes(conn net.Conn)  {
 			fmt.Println("tf Readpkg err = ",err)
 			return
 		}
-		fmt.Printf("mes = %v\n",mes)
+		//如果读取到消息，进行下一步处理逻辑
+		switch mes.Type {
+			case message.NotifyUserStatusMesType:
+				fmt.Println("有人上线了")
+				//1 、取出 NotifyUserStatusMes ， 2、把这个用户得消息，状态保存在客户端的map[int]User中
+				var notifyUserStatusMes message.NotifyUserStatusMes
+				json.Unmarshal([]byte(mes.Date),&notifyUserStatusMes)
+				updateUserStatus(&notifyUserStatusMes)
+			default:
+				fmt.Println("返回了未知消息类型")
+		}
 	}
 }

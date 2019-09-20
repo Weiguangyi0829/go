@@ -10,7 +10,7 @@ var (
 )
 
 type UserMgr struct {
-	onlineUsers map[int] *UserloginProcess
+	onlineUsers map[int]*UserloginProcess  //  int-*UserloginProcess()
 }
 
 //完成对userMgr初始化工作
@@ -23,6 +23,7 @@ func init() {
 //完成对onlineUsers添加
 func (this *UserMgr) AddonlineUsers(u *UserloginProcess) {
 	this.onlineUsers[u.UserId] = u
+
 }
 
 //完成对onlineUsers删除
