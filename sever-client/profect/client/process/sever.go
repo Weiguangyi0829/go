@@ -15,13 +15,18 @@ func ShowMenu()  {
 	fmt.Println("---------3、A list of message---------------------")
 	fmt.Println("---------4、Exit the System---------------------")
 	var key int
+	var content string
+	smprocess := &Smprocess{}
 	fmt.Scanf("%d\n",&key)
 	switch key {
 		case 1:
 			fmt.Println("当前在线用户")
 			outputonlineUser()
 		case 2:
-			fmt.Println("---------2、Send the message---------------------")
+			//fmt.Println("---------2、Send the message---------------------")
+			fmt.Println("请输入要发送的消息")
+			fmt.Scanf("%s\n",&content)
+			smprocess.SendGP(content)
 		case 3:
 			fmt.Println("---------3、A list of message---------------------")
 		case 4:
@@ -31,6 +36,7 @@ func ShowMenu()  {
 			fmt.Println("Your input is incorrect")
 	}
 }
+
 
 func severProcessResMes(conn net.Conn)  {
 	tf := &method.Transfer{
@@ -51,6 +57,8 @@ func severProcessResMes(conn net.Conn)  {
 				var notifyUserStatusMes message.NotifyUserStatusMes
 				json.Unmarshal([]byte(mes.Date),&notifyUserStatusMes)
 				updateUserStatus(&notifyUserStatusMes)
+			case message.SmMesType:
+				outputSM(&mes)
 			default:
 				fmt.Println("返回了未知消息类型")
 		}

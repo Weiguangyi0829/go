@@ -80,6 +80,10 @@ func (this *UserProcess) Alogin(userID int , userPwd string) (err error){
 	var loginResMes message.LoginResMes
 	err = json.Unmarshal([]byte(mes.Date),&loginResMes)
 	if loginResMes.Code == 200{
+		//初始化CurUser
+		CurUser.Conn = conn
+		CurUser.Id = userID
+		CurUser.Status = message.UserOnline
 		//fmt.Println("login success")
 		//可以显示当前在线用户列表，遍历
 		//fmt.Println("当前在线用户列表")
@@ -96,6 +100,7 @@ func (this *UserProcess) Alogin(userID int , userPwd string) (err error){
 			onlineUsers[v] = user
 		}
 		fmt.Println("\n\n")
+		//监听服务器返回的消息，进行下一步逻辑判断
         go severProcessResMes(conn)
 		for {
 			ShowMenu()

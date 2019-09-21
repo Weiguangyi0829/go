@@ -2,12 +2,13 @@ package process
 
 import (
 	"fmt"
+	"sever-client/profect/client/model"
 	"sever-client/profect/common/message"
 )
 
 //client 维护得map
 var onlineUsers map[int]*message.User = make(map[int]*message.User , 10)
-
+var CurUser model.CurUser //在用户完成之后，完成对CurUser初始化
 //处理返回的NotifyUserStatusMes
 func updateUserStatus(notifyUserStatusMes *message.NotifyUserStatusMes){
 

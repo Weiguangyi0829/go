@@ -15,6 +15,7 @@ type Process2 struct {
 
 //ServerProcessMes 函数 ：根据客户端发送消息的种类不同，决定调用哪个函数
 func (this *Process2)ServerProcessMes(mes *message.Message) (err error){
+	fmt.Println("mes = ",mes)  // &{SmMes {"content":"LO123","id":1,"pwd":"","name":"","statu":0}}
 	switch mes.Type {
 	    case message.LoginMesType:
 			//处理登录
@@ -28,8 +29,14 @@ func (this *Process2)ServerProcessMes(mes *message.Message) (err error){
 				Conn:this.Conn,
 			}
 			err = up.ServerProcessRegister(mes)
+		case message.SmMesType:
+			//处理群发
+			up := &process1.UserSM{
+				Conn:this.Conn,
+			}
+			up.ServerProcessSM(mes)
 	default:
-		fmt.Println("")
+		fmt.Println("S")
 	}
 	return
 }
