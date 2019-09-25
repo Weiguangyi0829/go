@@ -111,6 +111,7 @@ func (this *UserProcess) Alogin(userID int , userPwd string) (err error){
 	return
 }
 
+//完成注册校验
 func (this *UserProcess) Register(userID int , userPwd string ,userName string) (err error)  {
 	//链接到服务器端
 	//fmt.Printf("userID = %s userPwd = %s \n",userID,userPwd)

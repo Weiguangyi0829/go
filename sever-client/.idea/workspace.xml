@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f360610-336a-4687-a8e4-ff53f7049262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/profect/client/process/smMgr.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profect/client/process/smprocess.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profect/server/process1/smprocess.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
@@ -13,10 +14,7 @@
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/process/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/sever.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/process/userMgr.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userMgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userProcess.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/main/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/processor.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +39,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build sever-client/profect/server/main" />
+        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
