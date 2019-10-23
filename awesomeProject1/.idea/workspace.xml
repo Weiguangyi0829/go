@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/S23.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/cli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S23.go" beforeDir="false" afterPath="$PROJECT_DIR$/S23.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build S20.go">
+  <component name="RunManager" selected="Go Build.go build S23.go">
     <configuration name="go build S19.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -98,6 +105,15 @@
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/S20.go" />
+      <package value="awesomeProject1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build S23.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject1" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/S23.go" />
       <package value="awesomeProject1" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -120,29 +136,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject1" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/profect/client/main/main.go" />
-      <package value="awesomeProject1" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build awesomeProject1/Redis" />
       <item itemvalue="Go Build.go build awesomeProject1" />
       <item itemvalue="Go Build.go build S19.go" />
       <item itemvalue="Go Build.go build S20.go" />
+      <item itemvalue="Go Build.go build S23.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build S23.go" />
         <item itemvalue="Go Build.go build S20.go" />
         <item itemvalue="Go Build.go build S19.go" />
         <item itemvalue="Go Build.go build awesomeProject1" />
         <item itemvalue="Go Build.go build awesomeProject1/Redis" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>

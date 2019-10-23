@@ -19,6 +19,6 @@ func main() {
 	if err != nil{
 		panic(err.Error())
 	}
-	fmt.Println(*resp)cd /
+	fmt.Println(*resp)
 
 }

@@ -1,12 +1,12 @@
 package main
 
 import (
-	go_micro_srv_consignment "Gprc/shipper/consignment-service/proto/consignment"
+	go_micro_srv_consignment "Micro/shipper/consignment-service/proto/consignment"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"google.golang.org/grpc"
+	"github.com/micro/go-micro"
 	"io/ioutil"
 	"log"
 	"os"
@@ -33,13 +33,12 @@ func parseFile(filename string) (*go_micro_srv_consignment.Consignment,error){
 }
 
 func main() {
-	conn , err := grpc.Dial(Address,grpc.WithInsecure())
-	if err != nil{
-		log.Fatalf("connect err %v\n",err)
-	}
-	defer conn.Close()
-	//初始化grpc客户端
-	client := go_micro_srv_consignment.NewShippingServiceClient(conn)
+	service := micro.NewService(micro.Name("greeter.client"))
+	service.Init()
+
+	// 创建新的客户端
+	client := go_micro_srv_consignment.NewShippingServiceClient("greeter", service.Client())
+
 	// 在命令行中指定新的货物信息 json 文件
 	infoFile := DEFAULT_INFO_FILE
 	if len(os.Args) > 1 {
