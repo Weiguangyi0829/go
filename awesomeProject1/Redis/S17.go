@@ -13,16 +13,20 @@ func main(){
 		return
 	}
 	//2、通过go 向redis写入数据
-	_ , err = conn.Do("Set","name","Golang")
+	_ , err = conn.Do("HMSET","username","name","1","name1","JAVA","name2","python")
 	if err != nil{
-		fmt.Println("conn Do err = ",err)
+		fmt.Println("conn Do1 err = ",err)
 		return
 	}
 	fmt.Println("---------------------------------------")
-	r , err2 :=redis.String (conn.Do("Get","name"))
+	r , err2 :=redis.Values (conn.Do("hmget","username","name","name1","name2"))
+	fmt.Println(r)
 	if err2 != nil{
 		fmt.Println("conn Do err = ",err2)
 		return
 	}
-	fmt.Println(r)
+	for _ , v := range r {
+		a := v.([]byte)
+		fmt.Printf("%s\n",a)
+	}
 }

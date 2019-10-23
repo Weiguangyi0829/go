@@ -24,6 +24,7 @@ func (c *Session2Controller) Get() {
 	}
 }
 
+//has error
 func (c *Session2Controller) Post(){
 	u := UserInfo{}
 	if err := c.ParseForm(&u); err != nil{

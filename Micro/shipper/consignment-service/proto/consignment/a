@@ -1,0 +1,9 @@
+repeated Consignment consignments = 3;//目前所有托运的货物 repeated 可以用来存放N个相同类型的内容
+
+// 查看托运货物的信息
+    rpc GetConsignments (GetRequest) returns (Response) {
+    }
+
+    message GetRequest {
+
+    }

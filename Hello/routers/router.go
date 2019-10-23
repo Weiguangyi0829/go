@@ -15,4 +15,5 @@ func init() {
 	beego.Router("/file",&controllers.FormController{})
 	beego.Router("/test_input", &controllers.SessionController{})
 	beego.Router("/test_login", &controllers.Session2Controller{})
+    beego.Router("/login",&controllers.L{})
 }

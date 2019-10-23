@@ -2,19 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/profect/common/message/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/F1/S1-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/F1/S1-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/message1/S3-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/message1/S3-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/message1/messages.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/cli.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S18.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S19.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S20.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S21.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S22.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/1+.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/Irisdemo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../awesomeProject/Spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userProcess.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/common/message/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/common/message/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/model/userCurd.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/model/userCurd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/server/process1/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/server/process1/userProcess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/Redis/S17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webProject/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +80,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/profect/common/message" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,11 +95,11 @@
       <recent name="C:\Users\ZJL\go\src\awesomeProject1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\36527\go\src\awesomeProject1" />
       <recent name="C:\Users\36527\go\src\awesomeProject1\profect\client\clientprocess" />
       <recent name="C:\Users\36527\go\src\awesomeProject1\profect\client\main" />
       <recent name="C:\Users\36527\go\src\awesomeProject1\profect\server" />
       <recent name="C:\Users\36527\go\src\awesomeProject1\profect\process1" />
-      <recent name="C:\Users\36527\go\src\awesomeProject1\profect" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,37 +114,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build awesomeProject1/profect/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject1" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <package value="awesomeProject1/profect/client" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build awesomeProject1/profect/client/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject1" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <package value="awesomeProject1/profect/client/main" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build awesomeProject1/profect/server/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject1" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <package value="awesomeProject1/profect/server/main" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build S20.go">
+    <configuration name="go build S19.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/profect/server/main/main.go" />
+      <filePath value="$PROJECT_DIR$/S19.go" />
       <package value="awesomeProject1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build S20.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject1" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/S20.go" />
+      <package value="awesomeProject1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build awesomeProject1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject1" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/S18.go" />
+      <package value="awesomeProject1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build awesomeProject1/Redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject1" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Redis/S17.go" />
+      <package value="awesomeProject1/Redis" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -139,19 +161,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build awesomeProject1/profect/client" />
-      <item itemvalue="Go Build.go build main.go (2)" />
-      <item itemvalue="Go Build.go build awesomeProject1/profect/server/main" />
-      <item itemvalue="Go Build.go build awesomeProject1/profect/client/main" />
       <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build awesomeProject1/Redis" />
+      <item itemvalue="Go Build.go build awesomeProject1" />
+      <item itemvalue="Go Build.go build S19.go" />
+      <item itemvalue="Go Build.go build S20.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build S20.go" />
+        <item itemvalue="Go Build.go build S19.go" />
+        <item itemvalue="Go Build.go build awesomeProject1" />
+        <item itemvalue="Go Build.go build awesomeProject1/Redis" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build awesomeProject1/profect/server/main" />
-        <item itemvalue="Go Build.go build awesomeProject1/profect/client/main" />
-        <item itemvalue="Go Build.go build main.go (2)" />
-        <item itemvalue="Go Build.go build awesomeProject1/profect/client" />
       </list>
     </recent_temporary>
   </component>

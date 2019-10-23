@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f360610-336a-4687-a8e4-ff53f7049262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/F1/S1-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/F1/S1-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message1/S3-Sever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message1/S3-client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gprc/message1/messages.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S18.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S19.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S20.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/1+.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/Irisdemo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
@@ -13,8 +23,12 @@
       <change beforePath="$PROJECT_DIR$/../awesomeProject/Spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profect/client/process/userProcess.go" beforeDir="false" afterPath="$PROJECT_DIR$/profect/client/process/userProcess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webProject/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/S1.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\36527\go\src\sever-client" />
       <recent name="C:\Users\36527\go\src\sever-client\profect\server\model" />
     </key>
   </component>
