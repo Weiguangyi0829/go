@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/F1/S1-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/F1/S1-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/message1/S3-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/message1/S3-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/message1/messages.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/cli.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S18.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S19.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S20.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S21.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S22.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/1+.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/Irisdemo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/textLogin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/controllers/validations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/Spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/Redis/S17.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webProject/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S23.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
