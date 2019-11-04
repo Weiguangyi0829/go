@@ -2,344 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/api/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/api/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/api/proto/api.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/api/proto/api.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/api/proto/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/meta/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/meta/meta.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/meta/proto/api.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/meta/proto/api.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/meta/proto/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/proxy/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/proxy/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/rpc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/rpc/proto/api.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/rpc/proto/api.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/rpc/proto/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/api/rpc/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/api/hotel/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/api/hotel/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/api/hotel/proto/hotel.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/api/hotel/proto/hotel.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/api/hotel/proto/hotel.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/bin/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/bin/lint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/data/bindata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/data/customers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/data/locations.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/data/profiles.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/data/rates.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/auth/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/auth/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/auth/proto/auth.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/auth/proto/auth.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/auth/proto/auth.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/geo/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/geo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/geo/proto/geo.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/geo/proto/geo.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/geo/proto/geo.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/profile/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/profile/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/profile/proto/profile.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/profile/proto/profile.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/profile/proto/profile.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/rate/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/rate/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/rate/proto/rate.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/rate/proto/rate.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/booking/srv/rate/proto/rate.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/broker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/broker/consumer/consumer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/broker/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/broker/producer/producer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/codegen/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/codegen/codegen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/dc_filter/dc_filter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/dc_selector/dc_selector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/pub/pub.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/selector/selector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/client/wrapper/wrapper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/command/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/command/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/file/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/file/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/srv/conf/extra.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/srv/conf/micro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/srv/conf/other.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/config/grpc/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/event/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/event/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/event/srv/proto/pubsub.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/event/srv/proto/pubsub.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/event/srv/proto/pubsub.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/filter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/filter/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/filter/version/version.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/flags/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/flags/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/api/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/api/proto/api.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/api/proto/api.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/api/proto/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/form/web/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/function/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/function/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/function/proto/greeter.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/function/proto/greeter.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/function/proto/greeter.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/getip/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/getip/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/getip/proto/greeter.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/getip/proto/greeter.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/getip/proto/greeter.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/graceful/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/graceful/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/gin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/gin/gin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/gql-playground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/graphql/generated.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/graphql/gqlgen.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/graphql/resolver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/graphql/schema.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/graphql/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rest/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rest/rest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rpc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rpc/proto/hello/hello.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rpc/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rpc/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/api/rpc/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/api/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/python/rpc_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/python/sidecar_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/ruby/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/ruby/rpc_client.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/ruby/sidecar_client.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/cli/sidecar/sidecar.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/proto/hello/hello.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/python/rpc_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/python/sidecar_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/ruby/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/ruby/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/ruby/rpc_server.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/srv/ruby/sidecar_server.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/greeter/web/web.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/gateway/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/gateway/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/gateway/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/gateway/proto/hello/hello.pb.gw.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/gateway/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/srv/proto/hello/hello.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/srv/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/grpc/greeter/srv/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/heartbeat/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/heartbeat/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/helloworld/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/helloworld/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/helloworld/proto/greeter.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/helloworld/proto/greeter.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/helloworld/proto/greeter.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/health/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/health/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/micro/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/micro/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/probe/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/cmd/probe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/api-svc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/api.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/bot.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/proxy-svc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/proxy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/rbac.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/web-svc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/micro/web.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/service/greeter/greeter-api.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/service/greeter/greeter-srv.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/service/greeter/greeter-svc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/config/service/greeter/greeter-web.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/examples/greeter/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/examples/greeter/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/examples/greeter/proto/hello/hello.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/examples/greeter/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/examples/greeter/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/go/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/go/micro/micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/kubernetes/go/web/web.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/metadata/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/metadata/cli/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/metadata/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/metadata/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/mocking/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/mocking/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/mocking/mock/mock.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/noproto/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/noproto/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/noproto/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/options/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/plugins/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/plugins/prefix/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/plugins/prefix/prefix.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/http_client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/http_server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/rpc_client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/go/rpc_server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/http_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/http_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/proxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/rpc_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/python/rpc_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/http_client.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/http_server.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/proxy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/rpc_client.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/proxy/ruby/rpc_server.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/srv/proto/pubsub.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/srv/proto/pubsub.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/pubsub/srv/proto/pubsub.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/redirect/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/redirect/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/roundrobin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/roundrobin/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/srv/proto/hello/hello.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/srv/proto/hello/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/secure/srv/proto/hello/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/codegen/codegen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/handler/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/proto/example/example.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/proto/example/example.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/proto/example/example.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/subscriber/subscriber.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/server/wrapper/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/service/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/service/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/service/proto/greeter.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/service/proto/greeter.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/service/proto/greeter.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/sharding/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/sharding/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/shutdown/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/shutdown/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/server/proto/stream.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/server/proto/stream.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/server/proto/stream.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/web/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/web/html/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/stream/web/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/client/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/handler/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/proto/example/example.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/proto/example/example.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/api/proto/example/example.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/handler/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/plugin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/proto/example/example.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/proto/example/example.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/proto/example/example.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/fnc/subscriber/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/handler/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/plugin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/proto/example/example.micro.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/proto/example/example.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/proto/example/example.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/srv/subscriber/example.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/handler/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/template/web/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/tunnel/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/tunnel/echo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/tunnel/tunnel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/waitgroup/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/waitgroup/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/web/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/web/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/wrapper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/wrapper/cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shippy/examples/wrapper/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/.idea/Micro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/F1/S1-Sever.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/F1/S1-client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/message1/S3-Sever.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/message1/S3-client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/message1/messages.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/message1/messages.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/cli.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-cli/consignment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Micro/shipper/consignment-service/proto/consignment/comsignment.proto" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/S24.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hello/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/proto2/pay.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/proto2/pay.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webProject/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -421,16 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build S1.go">
-    <configuration name="go build S19.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="awesomeProject1" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/S19.go" />
-      <package value="awesomeProject1" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build S24.go">
     <configuration name="go build S1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -458,29 +118,38 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build S24.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="awesomeProject1" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/S24.go" />
+      <package value="awesomeProject1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build awesomeProject1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/S18.go" />
+      <filePath value="$PROJECT_DIR$/S25.go" />
       <package value="awesomeProject1" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build awesomeProject1" />
-      <item itemvalue="Go Build.go build S19.go" />
       <item itemvalue="Go Build.go build S20.go" />
       <item itemvalue="Go Build.go build S23.go" />
       <item itemvalue="Go Build.go build S1.go" />
+      <item itemvalue="Go Build.go build S24.go" />
+      <item itemvalue="Go Build.go build awesomeProject1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build S24.go" />
+        <item itemvalue="Go Build.go build awesomeProject1" />
         <item itemvalue="Go Build.go build S1.go" />
         <item itemvalue="Go Build.go build S23.go" />
         <item itemvalue="Go Build.go build S20.go" />
-        <item itemvalue="Go Build.go build S19.go" />
-        <item itemvalue="Go Build.go build awesomeProject1" />
       </list>
     </recent_temporary>
   </component>

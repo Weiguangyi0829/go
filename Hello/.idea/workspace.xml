@@ -2,33 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4051e45f-a789-4435-b3a3-c13f26dc3d17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Gprc/F1/S1-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/F1/S1-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message/S2-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message1/S3-Sever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message1/S3-client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gprc/message1/messages.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S18.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S19.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S20.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/1+.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/Irisdemo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../awesomeProject2/sipter/S2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../awesomeProject1/S24.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/textLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/textLogin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/validations.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/validations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/Spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject/Spider.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" beforeDir="false" afterPath="$PROJECT_DIR$/../awesomeProject1/Redis/S17.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/sever.go" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/sever.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../echo-demo/static/templates/S3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webProject/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/S1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/proto2/pay.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/proto2/pay.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webProject/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webProject/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

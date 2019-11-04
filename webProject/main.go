@@ -5,11 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"io"
 	"log"
+	"net/http"
 	"os"
 	"webProject/V2"
 	//"github.com/go-sql-driver/mysql"
 )
-import "net/http"
 
 func  main()  {
 	router :=gin.Default()

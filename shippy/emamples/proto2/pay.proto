@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package go.micro.srv.pay
+package go.micro.srv.pay;
 
 service PAY {
-
+    rpc Orderpay(Request) returns (Response){}
 }
 
 message Request {
@@ -14,4 +14,7 @@ message Request {
 
 message Response {
     string status = 1;
+    string payurl = 2;
+    string timeout_express = 3;
+    string out_trade_no = 4;
 }
