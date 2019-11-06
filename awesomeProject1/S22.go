@@ -48,4 +48,3 @@ func NewServices(opts ...Option) Services {
 	s.conf = c
 	return s
 }
-

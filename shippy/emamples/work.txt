@@ -1,5 +1,6 @@
-1、登录session
-2、etcd的服务发现
-3、沙箱支付
-4、数据库表设计
-5、搭载在docker 开端口 让etcd发现服务
+1、登录session --->finish and already change to the JWT
+2、订单服务连接数据库
+3、etcd的服务发现
+4、沙箱支付
+5、数据库表设计
+6、搭载在docker 开端口 让etcd发现服务

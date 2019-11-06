@@ -1,6 +1,7 @@
 package jwt
 
 import (
+	"errors"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )
@@ -16,12 +17,12 @@ type userStdClaims struct {
 }
 
 //实现`type claims interface` 的 `Valid() error`方法  完成自定义检验内容  他会覆盖默认写的Valid-->claims.go
-//func (c userStdClaims) Valid() (err error) {
-//	if c.VerifyExpiresAt(time.Now().Unix(),true) == false{
-//		return errors.New("token is expried")
-//	}
-//	return
-//}
+func (c userStdClaims) Valid() (err error) {
+	if c.VerifyExpiresAt(time.Now().Unix(),true) == false{
+		return errors.New("token is expried")
+	}
+	return
+}
 
 func JwtGenerateToken(m *User,d time.Duration) (string, error)  {
 	expireTime := time.Now().Add(d)  //持续时间

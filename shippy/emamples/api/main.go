@@ -47,13 +47,13 @@ func (s *S) CO(ctx context.Context,request *api.Request,response *api.Response) 
 
 func (s *S) SO(ctx context.Context,request *api.Request,response *api.Response) error{
 	log.Print("Received Say.SO API request")
-	user_id, ok := request.Get["user_id"]
-	fmt.Println(user_id)
+	username, ok := request.Get["username"]
+	fmt.Println(username)
 	if !ok {
 		return errors.BadRequest("go.micro.srv.CreateOrder","id cannot exits")
 	}
 	res, err :=s.client.GetAll(ctx,&O.Request{
-		UserId:               strings.Join(user_id.Values,""),
+		Name:               strings.Join(username.Values,""),
 	})
 	if err != nil {
 		return err

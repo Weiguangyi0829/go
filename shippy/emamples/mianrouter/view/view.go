@@ -5,10 +5,8 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	N "shippy/emamples/mianrouter/middleware/jwt"
 	Z "shippy/emamples/mianrouter/model"
 	b "shippy/emamples/mianrouter/model/db"
-	"time"
 )
 
 const times  = 100
@@ -92,12 +90,12 @@ func S3(c *gin.Context)  {
 		})
 	}
 	if pwd == user.Password {
-		z := &N.User{
-			Username: user.Username,
-			Password: user.Password,
-		}
-		d := time.Duration(times)*time.Second
-		token, err := N.JwtGenerateToken(z,d)
+		//z := &N.User{
+		//	Username: user.Username,
+		//	Password: user.Password,
+		//}
+		//d := time.Duration(times)*time.Second
+		//token, err := N.JwtGenerateToken(z,d)
 		if err != nil{
 			c.JSON(http.StatusBadRequest,gin.H{
 				"status":"The create token is fail",
@@ -107,7 +105,7 @@ func S3(c *gin.Context)  {
 		}else {
 			c.JSON(http.StatusOK,gin.H{
 				"user":username,
-				"token": token,
+				//"token": token,
 			})
 			c.Abort()// 终止
 			return
