@@ -3,14 +3,19 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/micro/go-micro"
-	"log"
-	O "shippy/emamples/proto2"
 	"github.com/iGoogle-ink/gopay"
+	"github.com/micro/go-micro"
+	"github.com/micro/go-micro/broker"
+	"log"
+	"shippy/emamples/message"
+	O "shippy/emamples/proto2"
 )
 const (
 	privateKey  = "23 "
 	alipayPublicKey = "aaa"
+)
+var (
+	topic = "go.micro.web.topic.order"
 )
 type I interface {
 	pay(consignmentid1 string, number string, timeout string, cgprice string) (payUrl string)
@@ -46,21 +51,39 @@ func (p *P) pay(consignmentid1 string, number string, timeout string, cgprice st
 
 func (s *S) Orderpay(ctx context.Context,request *O.Request,response *O.Response) error {
 	log.Print("Received pay.Orderpay request")
-	payurl,client,bm := s.P.pay()
-	aliRsp, err := client.AliPayTradePay(bm)
-	if err != nil{
-		return err
-	}
-	ok, err := gopay.VerifyAliPaySign(alipayPublicKey, aliRsp.SignData, aliRsp.Sign)
-	if ok {
-		response.Payurl = payurl
-	}
+	//payurl,client,bm := s.P.pay()
+	//aliRsp, err := client.AliPayTradePay(bm)
+	//if err != nil{
+	//	return err
+	//}
+	//ok, err := gopay.VerifyAliPaySign(alipayPublicKey, aliRsp.SignData, aliRsp.Sign)
+	//if ok {
+	//	response.Payurl = payurl
+	//}
 	return nil
 }
 
+func makeurl(p broker.Event) string {
+	url := "www."+string(p.Message().Body)+".com"
+	return url
+}
+
 func main()  {
+	bk := broker.NewBroker(
+		broker.Addrs(fmt.Sprintf("%s:%d", "127.0.0.1", 12313)),
+	)
+	_, err := bk.Subscribe(topic, func(p broker.Event) error {
+		log.Print("[sub]:Received 111 Body: %s,Header:%s", string(p.Message().Body), p.Message().Header)
+		url := makeurl(p)
+		message.Pubpay(url)
+		return nil
+	})
+	if err != nil{
+		panic(err)
+	}
 	service := micro.NewService(
 			micro.Name("go.micro.api.pay"),
+			micro.Broker(bk),
 	)
 	service.Init()
 	O.RegisterPAYHandler(service.Server(),new(S))

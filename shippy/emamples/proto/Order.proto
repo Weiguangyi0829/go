@@ -21,6 +21,7 @@ message Response {
     repeated Order orders = 3;
     string err = 4;
     string status = 5;
+    string payurl = 6;
 }
 
 //一堆订单
