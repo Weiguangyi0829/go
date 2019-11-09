@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S23.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/S1.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/S1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/office/S27.go" beforeDir="false" afterPath="$PROJECT_DIR$/office/S27.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/V2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/V2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build S27.go">
+  <component name="RunManager" selected="Go Build.go build awesomeProject1 (3)">
     <configuration name="go build S24.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -123,29 +125,29 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build awesomeProject1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build awesomeProject1 (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject1" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/S25.go" />
+      <filePath value="$PROJECT_DIR$/S23.go" />
       <package value="awesomeProject1" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build S24.go" />
-      <item itemvalue="Go Build.go build awesomeProject1" />
       <item itemvalue="Go Build.go build awesomeProject1 (1)" />
       <item itemvalue="Go Build.go build awesomeProject1 (2)" />
       <item itemvalue="Go Build.go build S27.go" />
+      <item itemvalue="Go Build.go build awesomeProject1 (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build awesomeProject1 (3)" />
         <item itemvalue="Go Build.go build S27.go" />
         <item itemvalue="Go Build.go build awesomeProject1 (2)" />
         <item itemvalue="Go Build.go build awesomeProject1 (1)" />
         <item itemvalue="Go Build.go build S24.go" />
-        <item itemvalue="Go Build.go build awesomeProject1" />
       </list>
     </recent_temporary>
   </component>

@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/broker"
+	"github.com/micro/go-micro/config/cmd"
 	"log"
 	"shippy/emamples/message"
 	Z "shippy/emamples/model"
 	b "shippy/emamples/model/db"
-	O "shippy/emamples/proto"
+	O "shippy/emamples/service/proto"
 	"strconv"
 	"time"
 )
@@ -73,6 +74,7 @@ func (r *R) GetAll(ctx context.Context, request *O.Request,response *O.Response)
 }
 
 func main() {
+	cmd.Init()
 	bk := broker.NewBroker(
 		broker.Addrs(fmt.Sprintf("%s:%d", "127.0.0.1", 12312)),
 	)
@@ -87,6 +89,8 @@ func main() {
 	service := micro.NewService(
 		micro.Name("go.micro.api.CreateOrder"),
 		micro.Broker(bk),
+		micro.Address(":8888"),
+
 	)
 	service.Init()
 	O.RegisterORDERHandler(service.Server(),new(R))

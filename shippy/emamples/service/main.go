@@ -6,7 +6,7 @@ import (
 	"github.com/micro/go-micro"
 	"log"
 	"shippy/emamples/data"
-	O "shippy/emamples/proto"
+	O "shippy/emamples/service/proto"
 	"time"
 
 )

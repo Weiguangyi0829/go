@@ -8,7 +8,7 @@ import (
 	api "github.com/micro/go-micro/api/proto"
 	"github.com/micro/go-micro/errors"
 	"log"
-	O "shippy/emamples/proto"
+	O "shippy/emamples/service/proto"
 	"strings"
 )
 
@@ -70,11 +70,12 @@ func (s *S) SO(ctx context.Context,request *api.Request,response *api.Response) 
 func main() {
 	service := micro.NewService(
 		micro.Name("go.micro.api.CreateOrder1"),
+		micro.Address(":9000"),
 	)
 	service.Init()
 	service.Server().Handle(
 		service.Server().NewHandler(
-			&S{client:O.NewORDERService("go.micro.api.CreateOrder",service.Client())},
+			&S{client: O.NewORDERService("go.micro.api.CreateOrder",service.Client())},
 			),
 	)
 	//O.RegisterCreateOrderHandler()

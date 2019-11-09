@@ -6,9 +6,11 @@ import (
 	"github.com/iGoogle-ink/gopay"
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/broker"
+	"github.com/micro/go-micro/config/cmd"
+	_ "github.com/micro/go-plugins/broker/rabbitmq"
 	"log"
 	"shippy/emamples/message"
-	O "shippy/emamples/proto2"
+	O "shippy/emamples/service2/proto2"
 )
 const (
 	privateKey  = "23 "
@@ -69,6 +71,7 @@ func makeurl(p broker.Event) string {
 }
 
 func main()  {
+	cmd.Init()
 	bk := broker.NewBroker(
 		broker.Addrs(fmt.Sprintf("%s:%d", "127.0.0.1", 12313)),
 	)
@@ -84,6 +87,7 @@ func main()  {
 	service := micro.NewService(
 			micro.Name("go.micro.api.pay"),
 			micro.Broker(bk),
+			micro.Address(":8889"),
 	)
 	service.Init()
 	O.RegisterPAYHandler(service.Server(),new(S))

@@ -4,15 +4,15 @@
 package go_micro_srv_order
 
 import (
-	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	math "math"
+	"fmt"
+	"github.com/golang/protobuf/proto"
+	"math"
 )
 
 import (
-	context "context"
-	client "github.com/micro/go-micro/client"
-	server "github.com/micro/go-micro/server"
+	"context"
+	"github.com/micro/go-micro/client"
+	"github.com/micro/go-micro/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
