@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	Z "shippy/emamples/mianrouter/model"
+	Z "shippy/emamples/service/model"
 )
 
 func Initialization()*gorm.DB {
@@ -18,6 +18,12 @@ func Initialization()*gorm.DB {
 }
 
 func C(db *gorm.DB , u *Z.User ) {
+	if err := db.Create(u).Error; err != nil {
+		fmt.Println("插入失败", err)
+	}
+}
+
+func C1(db *gorm.DB , u *Z.Order ) {
 	if err := db.Create(u).Error; err != nil {
 		fmt.Println("插入失败", err)
 	}
@@ -36,6 +42,19 @@ func R(db *gorm.DB , u *Z.User) (error,Z.User) {
 	return nil,z
 }
 
+func R1(db *gorm.DB,username string) ([]Z.Order,error){
+	z := []Z.Order{}
+	isNotFound := db.Where("username = ?",username).Find(&z).RecordNotFound()
+	if isNotFound {
+		return z , errors.New("The user is not exitis")
+	}
+	return z , nil
+}
+
 func D(db *gorm.DB , u *Z.User)  {
+	db.Delete(&u)
+}
+
+func D1(db *gorm.DB,u *Z.Order)  {
 	db.Delete(&u)
 }

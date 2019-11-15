@@ -26,7 +26,7 @@ var (
 	TokenExpired     error  = errors.New("Token is expired")
 	TokenNotValidYet error  = errors.New("Token not active yet")
 	TokenMalformed   error  = errors.New("That's not even a token")
-	TokenInvalid     error  = errors.New("Couldn't handle this token:")
+	TokenInvalid     error  = errors.New("Couldn't handler this token:")
 	SignKey          string = "newtrekWang"
 )
 

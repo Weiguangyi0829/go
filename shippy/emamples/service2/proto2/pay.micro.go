@@ -47,7 +47,7 @@ func NewPAYService(name string, c client.Client) PAYService {
 		c = client.NewClient()
 	}
 	if len(name) == 0 {
-		name = "go.micro.srv.pay"
+		name = "go.micro.Usrv.pay"
 	}
 	return &pAYService{
 		c:    c,

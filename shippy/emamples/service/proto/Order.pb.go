@@ -236,9 +236,9 @@ func (m *Order) GetStatus() string {
 }
 
 func init() {
-	proto.RegisterType((*Request)(nil), "go.micro.srv.order.Request")
-	proto.RegisterType((*Response)(nil), "go.micro.srv.order.Response")
-	proto.RegisterType((*Order)(nil), "go.micro.srv.order.Order")
+	proto.RegisterType((*Request)(nil), "go.micro.Usrv.order.Request")
+	proto.RegisterType((*Response)(nil), "go.micro.Usrv.order.Response")
+	proto.RegisterType((*Order)(nil), "go.micro.Usrv.order.Order")
 }
 
 func init() { proto.RegisterFile("Order.proto", fileDescriptor_a098924d90c513ae) }

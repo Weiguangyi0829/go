@@ -3,10 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7b05e94b-b0fd-44be-9952-1f00dce0a0da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/office/S27.go" beforeDir="false" afterPath="$PROJECT_DIR$/office/S27.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shippy/emamples/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S26.go" beforeDir="false" afterPath="$PROJECT_DIR$/S26.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sever-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/mianrouter/middleware/jwt/jwt副本.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/mianrouter/middleware/jwt/jwt副本.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/model/db/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/model/model.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/V2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/V2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/proto/Order.micro.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/proto/Order.micro.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service/proto/Order.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service/proto/Order.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/proto2/pay.micro.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/proto2/pay.micro.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service2/proto2/pay.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service2/proto2/pay.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service3/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service3/middleware/jwt/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service3/athu/model/authentication/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service3/middleware/jwt/jwt副本.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service3/model/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service3/Usrv/model/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/service3/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/service3/Usrv/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shippy/emamples/work.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../shippy/emamples/work.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

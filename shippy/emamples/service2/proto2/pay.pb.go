@@ -139,8 +139,8 @@ func (m *Response) GetOutTradeNo() string {
 }
 
 func init() {
-	proto.RegisterType((*Request)(nil), "go.micro.srv.pay.Request")
-	proto.RegisterType((*Response)(nil), "go.micro.srv.pay.Response")
+	proto.RegisterType((*Request)(nil), "go.micro.Usrv.pay.Request")
+	proto.RegisterType((*Response)(nil), "go.micro.Usrv.pay.Response")
 }
 
 func init() { proto.RegisterFile("pay.proto", fileDescriptor_0564d675d5c516e0) }

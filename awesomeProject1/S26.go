@@ -25,7 +25,6 @@ import (
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
-
 	var wg sync.WaitGroup
 	for i := 0; i < 5; i++ {
 		wg.Add(1)

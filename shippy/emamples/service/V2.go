@@ -8,8 +8,8 @@ import (
 	"github.com/micro/go-micro/config/cmd"
 	"log"
 	"shippy/emamples/message"
-	Z "shippy/emamples/model"
-	b "shippy/emamples/model/db"
+	Z "shippy/emamples/service/model"
+	B "shippy/emamples/service/model/db"
 	O "shippy/emamples/service/proto"
 	"strconv"
 	"time"
@@ -34,8 +34,8 @@ func (r *R) Create(ctx context.Context, request *O.Request,response *O.Response)
 	response.Consignmentid = request.Consignmentid
 	response.Status = "Successfully"
 	i,_ := strconv.ParseInt(request.Price,10,64)
-	db := b.Initialization()
-	b.C(db,&Z.Order{
+	db := B.Initialization()
+	B.C1(db,&Z.Order{
 		Username:    request.Name,
 		Ordernumber: request.Consignmentid,
 		Createtime: response.Order.Createtime,
@@ -51,25 +51,31 @@ func (r *R) Create(ctx context.Context, request *O.Request,response *O.Response)
 func (r *R) GetAll(ctx context.Context, request *O.Request,response *O.Response)  error {
 	name  := request.Name
 	fmt.Println(name)
-	db := b.Initialization()
-	z, err := b.R(db,name)
+	db := B.Initialization()
+	z, err := B.R1(db,name)
 	if err != nil{
 		return err
 	}
-	var o = []*O.Order{}
-	for i := 0;i<len(z);i++ {
-		t := &O.Order{
-			Name:                 z[i].Username,
-			//Price:                z[i].Price,
-			Status:               z[i].Status,
-			Createtime:           z[i].Createtime,
+	if len(z) == 0 {
+		response.Status = "not Order "
+		return nil
+	}else {
+		var o = []*O.Order{}
+		for i := 0;i<len(z);i++ {
+			t := &O.Order{
+				Name:                 z[i].Username,
+				//Price:                z[i].Price,
+				Status:               z[i].Status,
+				Createtime:           z[i].Createtime,
+			}
+			o = append(o,t)
 		}
-		o = append(o,t)
+		fmt.Println(z)
+		response.Status = "Successfully"
+		response.Orders = o
+		fmt.Println(response)
+		return nil
 	}
-	fmt.Println(z)
-	response.Status = "Successfully"
-	response.Orders = o
-	fmt.Println(response)
 	return nil
 }
 

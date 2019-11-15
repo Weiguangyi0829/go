@@ -48,7 +48,7 @@ func NewORDERService(name string, c client.Client) ORDERService {
 		c = client.NewClient()
 	}
 	if len(name) == 0 {
-		name = "go.micro.srv.order"
+		name = "go.micro.Usrv.order"
 	}
 	return &oRDERService{
 		c:    c,

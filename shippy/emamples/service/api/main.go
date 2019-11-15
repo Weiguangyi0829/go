@@ -9,6 +9,8 @@ import (
 	"github.com/micro/go-micro/errors"
 	"log"
 	O "shippy/emamples/service/proto"
+	B "shippy/emamples/service/model/db"
+	Z "shippy/emamples/service/model"
 	"strings"
 )
 
@@ -19,12 +21,17 @@ type S struct {
 //创建订单
 func (s *S) CO(ctx context.Context,request *api.Request,response *api.Response) error {
 	log.Print("Received Say.CO API request")
-	user_id, ok := request.Get["user_id"]
+	user_id, _ := request.Get["user_id"]
 	Consignmentid, _ := request.Get["Consignmentid"]
-	name, _ := request.Get["name"]
+	name, ok := request.Get["name"]
 	price, _ := request.Get["price"]
-	if !ok  {
-		return errors.BadRequest("go.micro.srv.CreateOrder","id cannot exits")
+	db := B.Initialization()
+	//根据username查询
+	err, _ := B.R(db,&Z.User{
+		Username:  strings.Join(name.Values,""),
+	})
+	if ok && err != nil {
+		return errors.BadRequest("go.micro.Usrv.CreateOrder","id cannot exits")
 	}
 	res, err := s.client.Create(ctx,&O.Request{
 		UserId:                   strings.Join(user_id.Values,""),
@@ -49,8 +56,13 @@ func (s *S) SO(ctx context.Context,request *api.Request,response *api.Response) 
 	log.Print("Received Say.SO API request")
 	username, ok := request.Get["username"]
 	fmt.Println(username)
-	if !ok {
-		return errors.BadRequest("go.micro.srv.CreateOrder","id cannot exits")
+	db := B.Initialization()
+	//根据username查询
+	err, _ := B.R(db,&Z.User{
+		Username:  strings.Join(username.Values,""),
+	})
+	if ok && err != nil {
+		return errors.BadRequest("go.micro.Usrv.CreateOrder","id cannot exits")
 	}
 	res, err :=s.client.GetAll(ctx,&O.Request{
 		Name:               strings.Join(username.Values,""),
