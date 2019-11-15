@@ -41,5 +41,3 @@ go get github.com/micro/protoc-gen-go
 go get github.com/micro/micro
 ```
   
-Third
-====
