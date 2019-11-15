@@ -41,3 +41,4 @@ go get github.com/micro/protoc-gen-go
 go get github.com/micro/micro
 ```
   
+好了，夜已深，再不睡觉，大灰狼就来抓人了
