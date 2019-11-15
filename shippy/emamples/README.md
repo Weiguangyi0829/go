@@ -4,6 +4,9 @@ If you interested anout the Micro, you can chick this url(https://github.com/mic
 Now I'm going to introduce you to the structure of this directory and how to run.  
   
 Why did you get this document, because when I started learning Micro alone, I encountered all kinds of difficulties, all of them were overcome by myself, and finally I experienced the baptism of time. Now rooted, I want to lead the newcomers through this big pit.  
+  
+Since it is still in the learning phase, it will be run on the docker later, which will be a big pit.  
+  
 ____
 First  
 ====
