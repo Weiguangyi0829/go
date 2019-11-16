@@ -5,3 +5,21 @@ You must have these foundations before you can start watching :
 * The structure of Micro 
 - How to use after 
   
+  
+How to run
+====  
+
+* run micro API  
+```
+#micro api --handler=api
+```
+- run ./service/main.go  
+```
+go run main.go
+```
+* run ./api/main.go
+```
+go run main.go
+```
+  
+Below is the rendering:  
